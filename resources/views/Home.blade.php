@@ -10,20 +10,7 @@
     <script src="{{ asset('js/script.js') }}"></script>
 </head>
 <body>
-<div id="menu">
-  <div id="menu-bar" onclick="menuOnClick()">
-    <div id="bar1" class="bar"></div>
-    <div id="bar2" class="bar"></div>
-    <div id="bar3" class="bar"></div>
-  </div>
-  <nav class="nav" id="nav">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Services</a></li>
-    </ul>
-  </nav> 
-</div>
+@include('navbar') <!-- Include the navbar component -->
 <div class="menu-bg" id="menu-bg"></div>
   <main>
     <!-- Header content -->
@@ -36,25 +23,7 @@
       <img id="logo" src="{{ asset('assets/logo.png') }}" alt="logo">
       </div>
     </div>
-  <!-- content -->
-    <div id="content">
-    </div>
   </main>
-  <footer>
-  <!-- Footer content -->
-  <div class="footer-content">
-    <div class="footer-left">
-      <a href="your_other_page_url">Kaijukarainen.com</a>
-    </div>
-    <div>
-      <p>&copy; <?php echo date("Y"); ?> APU-App. All rights reserved.</p>
-    </div>
-    <div class="footer-right">
-      <a href="link_to_facebook" target="_blank"><img src="{{ asset('assets/facebook(1).png') }}" alt="Facebook"></a>
-      <a href="link_to_tiktok" target="_blank"><img src="{{ asset('assets/tiktok.png') }}" alt="TikTok"></a>
-      <a href="link_to_instagram" target="_blank"><img src="{{ asset('assets/instagram.png') }}" alt="Instagram"></a>
-    </div>
-  </div>
-</footer>
+  @include('footer') <!-- Include the footer component -->
 </body>
 </html>
