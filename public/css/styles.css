@@ -1,0 +1,231 @@
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    background-image: url("../assets/background(1).jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 30px 20px 20px 0;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ef6f20;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+    text-align: right;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+  
+  .menu-bg, #menu {
+    top: 0;
+    right: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 20px 20px 0;
+    background: radial-gradient(circle, #ef6f20, #ef6f20);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+    margin-left: 50px;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(60%,-30%);
+  }
+
+main {
+    flex: 1; /* Fill the remaining vertical space between the header and footer */
+    padding: 20px;
+}
+#header {
+    margin-top: 5rem;
+    margin-left: -40px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    background-color: rgba(178, 189, 200, 0.8); /* Slategray color with 0.8 opacity */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 55%;
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+h1 {
+    padding-left: 5rem;
+    font-weight: bold;
+    font-size: 6em;
+    margin: 0;
+    color: #474747
+}
+#headerPara{
+    padding-left: 5rem;
+    color: #474747
+}
+#logo{
+    width: 180px;
+}
+#content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+footer {
+    background-color: #ef6f20;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Center the content horizontally */
+  }
+  
+  .footer-content {
+    display: flex;
+    align-items: center; /* Center the content horizontally within the flex column */
+    flex-direction: column;
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-right a {
+    margin-left: 10px; /* Adjust the spacing between icons */
+  }
+  
+  .footer-right img {
+    width: 30px; /* Set the width of the social media icons */
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  footer a:visited {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #ccc; /* Change the color on hover to a different shade if desired */
+  }
+
+/* Media Queries for Mobile Responsive Layout */
+@media screen and (max-width: 1380px) {
+    #header{
+        width: 90%;
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 3em;
+        margin: 0;
+    }
+    #logo{
+        width: 120px;
+    }
+}
+
+
+/* Responsive adjustments for screens below 490px */
+@media screen and (max-width: 490px) {
+    #header {
+      width: 90%; /* Reduce the width for smaller screens */
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 3em; /* Reduce font size for h1 on smaller screens */
+      padding-left: 2rem;
+    }
+  
+    #logo {
+      width: 100px; /* Reduce logo size for smaller screens */
+      padding-left: 2rem;
+    }
+  
+    #headerPara {
+      padding-left: 2rem; /* Adjust padding for the header paragraph on smaller screens */
+      margin-right: 5px;
+    }
+  }
