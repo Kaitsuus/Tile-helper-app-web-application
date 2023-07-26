@@ -10,8 +10,8 @@
     <title>Terms&Conditions</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="{{ url('css/styles.css') }}" rel="stylesheet">
-    <script src="{{ asset('js/script.js') }}"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/script.js"></script>
 </head>
 <body>
 @include('navbar') <!-- Include the navbar component -->
