@@ -142,7 +142,8 @@ h2 {
     font-weight: bold;
     font-size: 4em;
     margin: 0;
-    color: #474747
+    color: #474747;
+    line-height: 50px;
 }
 #headerPara{
     padding-left: 5rem;

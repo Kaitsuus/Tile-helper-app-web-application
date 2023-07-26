@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PostController::class, 'index']);
-Route::get('/terms-and-services', [PostController::class, 'termsAndServicesPost']);
+Route::get('/terms-and-conditions', [PostController::class, 'termsAndServicesPost']);
 Route::get('/contact', [PostController::class, 'contactPost']);
