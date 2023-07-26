@@ -191,6 +191,25 @@ footer {
     color: #ccc; /* Change the color on hover to a different shade if desired */
   }
 
+  #cookieBanner{
+    width: 40%;
+    background-color: #ef6f20;
+    border-bottom-right-radius: 20px; /* Add border-radius for rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  }
+  #cookieContent{
+    padding: 20px;
+    color: #fafafa
+  }
+  #cookieButton{
+    background-color: #474747;
+    border-radius: 5px;
+    border:none;
+    width: 120px;
+    padding: 10px;
+    color:#fafafa
+  }
+
 /* Media Queries for Mobile Responsive Layout */
 @media screen and (max-width: 1380px) {
     #header{
@@ -227,5 +246,9 @@ footer {
     #headerPara {
       padding-left: 2rem; /* Adjust padding for the header paragraph on smaller screens */
       margin-right: 5px;
+    }
+    
+    #cookieBanner{
+      width: 100%;
     }
   }

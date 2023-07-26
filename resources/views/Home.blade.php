@@ -10,6 +10,7 @@
     <script src="{{ asset('js/script.js') }}"></script>
 </head>
 <body>
+@include('cookie-consent::index')
 @include('navbar') <!-- Include the navbar component -->
 <div class="menu-bg" id="menu-bg"></div>
   <main>
