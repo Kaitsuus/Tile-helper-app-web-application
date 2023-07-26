@@ -11,18 +11,19 @@
 </head>
 <body>
 @include('navbar') <!-- Include the navbar component -->
-<div class="menu-bg" id="menu-bg"></div>
   <main>
     <!-- Header content -->
     <div id="header">
       <div>
-      <h1>Terms & Services</h1>
-      <p id="headerPara">inser terms and services here</p>
+      <h2>Terms & conditions</h2>
       </div>
       <div>
       <img id="logo" src="{{ asset('assets/logo.png') }}" alt="logo">
       </div>
     </div>
+      <div class="terms-content">
+          {!! nl2br(e($termsContent)) !!}
+      </div>
   </main>
   @include('footer') <!-- Include the footer component -->
 </body>

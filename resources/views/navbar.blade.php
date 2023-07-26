@@ -1,6 +1,8 @@
 <!-- navbar.blade.php -->
-<div id="menu">
-    <div id="menu-bar" onclick="menuOnClick()">
+<div class="menu-wrapper">
+  <div class="menu-bg" id="menu-bg"></div>
+  <div id="menu">
+  <div id="menu-bar" onclick="menuOnClick()">
     <div id="bar1" class="bar"></div>
     <div id="bar2" class="bar"></div>
     <div id="bar3" class="bar"></div>
@@ -13,4 +15,4 @@
     </ul>
   </nav> 
 </div>
-<div class="menu-bg" id="menu-bg"></div>
+</div>

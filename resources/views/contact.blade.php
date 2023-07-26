@@ -15,8 +15,8 @@
     <!-- Header content -->
     <div id="header">
       <div>
-      <h1>Contact info</h1>
-      <p id="headerPara">Insert contact info here</p>
+      <h2>Contact info</h2>
+      <p id="headerPara">kai.jukarainen@kaijukarainen.com</p>
       </div>
       <div>
       <img id="logo" src="{{ asset('assets/logo.png') }}" alt="logo">

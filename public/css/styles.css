@@ -6,12 +6,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: auto;
+    overflow-x: hidden;
     background-image: url("../assets/background(1).jpg");
     background-size: cover;
     background-position: center;
 }
 
+.menu-wrapper {
+  position: sticky;
+  top: 0;
+}
 #menu {
     z-index: 2;
   }
@@ -132,6 +137,13 @@ h1 {
     margin: 0;
     color: #474747
 }
+h2 {
+    padding-left: 5rem;
+    font-weight: bold;
+    font-size: 4em;
+    margin: 0;
+    color: #474747
+}
 #headerPara{
     padding-left: 5rem;
     color: #474747
@@ -209,6 +221,14 @@ footer {
     padding: 10px;
     color:#fafafa
   }
+  .terms-content {
+    height: 100%;
+    z-index: 99;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(178, 189, 200, 0.3);
+    color: #232222;
+  }
 
 /* Media Queries for Mobile Responsive Layout */
 @media screen and (max-width: 1380px) {
@@ -216,6 +236,11 @@ footer {
         width: 90%;
     }
     h1 {
+        font-weight: bold;
+        font-size: 3em;
+        margin: 0;
+    }
+    h2 {
         font-weight: bold;
         font-size: 3em;
         margin: 0;
@@ -234,7 +259,11 @@ footer {
     }
   
     h1 {
-      font-size: 3em; /* Reduce font size for h1 on smaller screens */
+      font-size: 2em; /* Reduce font size for h1 on smaller screens */
+      padding-left: 2rem;
+    }
+    h2 {
+      font-size: 2em; /* Reduce font size for h1 on smaller screens */
       padding-left: 2rem;
     }
   
