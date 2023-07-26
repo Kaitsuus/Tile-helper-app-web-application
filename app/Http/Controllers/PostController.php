@@ -12,7 +12,7 @@ class PostController extends Controller
         return view('Home');
     }
     public function termsAndServicesPost(){
-        $termsContent = File::get(public_path('TERMSANDCONDITIONS.md'));
+        $termsContent = File::get(public_path('aputermsandconditions.MD'));
         return view('terms', ['termsContent' => $termsContent]);
     }
     public function contactPost(){
