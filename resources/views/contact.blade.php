@@ -21,7 +21,7 @@
       <div>
       <h2>Contact info</h2>
       <p id="headerPara">kai.jukarainen@kaijukarainen.com</p>
-      <h4>Account Deletion Request</h4>
+      <p id="headerPara">Account Deletion Request</p>
       <p id="headerPara">We value your privacy and offer a simple process to delete your account from APU-Apps. Follow the steps below:</p>
       <p id="headerPara">Log in to your APU-Apps account.</p>
       <p id="headerPara">Navigate to the "User Menu" section.</p>
